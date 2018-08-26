@@ -1,0 +1,18 @@
+Source: connman-plugin-suspend-wmtwifi
+Section: libs
+Priority: optional
+Maintainer: Adam Boardman <adamboardman@gmail.com>
+Build-Depends:
+ debhelper (>= 7),
+ libmce-glib,
+ connman-dev,
+ libnl-3-dev,
+ libnl-genl-3-dev
+Standards-Version: 3.9.8
+Vcs-Git: https://github.com/gemian/connman-plugin-suspend-wmtwifi.git
+
+Package: connman-plugin-suspend-wmtwifi
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: wmtWifi connman plugin for suspend
+ This is a package which makes sure devices with a gen2 /dev/wmtWifi driver can sucessfully suspend while WLAN is active.

@@ -1,0 +1,6 @@
+connman-plugin-suspend-wmtwifi (0.0.1+gemian) stretch; urgency=low
+
+  * Branched for Gemian
+
+ -- Adam Boardman <adamboardman@gmail.com>  Sun, 26 Aug 2018 09:25:48 +0100
+
