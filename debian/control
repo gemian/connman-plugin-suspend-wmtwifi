@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Adam Boardman <adamboardman@gmail.com>
 Build-Depends:
  debhelper (>= 7),
- libmce-glib,
+ libmce-glib-dev,
  connman-dev,
  libdbus-1-dev,
  libnl-3-dev,
