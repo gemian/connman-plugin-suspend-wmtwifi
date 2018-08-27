@@ -130,7 +130,7 @@ INSTALL_PERM  = 755
 INSTALL = install
 INSTALL_DIRS = $(INSTALL) -d
 INSTALL_FILES = $(INSTALL) -m $(INSTALL_PERM)
-INSTALL_LIB_DIR = $(DESTDIR)/usr/lib/connman/plugins
+INSTALL_LIB_DIR = $(DESTDIR)/usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/connman/plugins
 
 install: $(INSTALL_LIB_DIR)
 	$(INSTALL_FILES) $(RELEASE_LIB) $(INSTALL_LIB_DIR)
