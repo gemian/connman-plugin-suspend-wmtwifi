@@ -6,3 +6,8 @@
 
 %:
 	dh $@
+
+override_dh_install:
+	install -p -d -o root -g root -m 755 debian/tmp/etc/udev/rules.d
+	install -m 664 debian/70-wifi-powersave.rules debian/tmp/etc/udev/rules.d/70-wifi-powersave.rules
+	dh_install
